@@ -11,7 +11,6 @@ class ProdukController extends Controller
 {
     public function index(Request $request)
     {
-        // Default filter: hanya produk dengan status "bisa dijual"
         $produk = Produk::with(['kategori', 'status'])
             ->whereHas('status', function ($query) {
                 $query->where('nama_status', 'bisa dijual');
@@ -21,31 +20,26 @@ class ProdukController extends Controller
         return view('produk.index', compact('produk'));
     }
 
-    // Tambahkan method baru untuk menangani filter
     public function filter(Request $request)
     {
         $query = Produk::with(['kategori', 'status']);
 
-        // Filter berdasarkan status
         if ($request->has('status') && $request->status !== 'all') {
             $query->whereHas('status', function ($q) use ($request) {
                 $q->where('nama_status', $request->status);
             });
         } else {
-            // Default: hanya bisa dijual
             $query->whereHas('status', function ($q) {
                 $q->where('nama_status', 'bisa dijual');
             });
         }
 
-        // Filter berdasarkan kategori
         if ($request->has('kategori') && $request->kategori !== 'all') {
             $query->whereHas('kategori', function ($q) use ($request) {
                 $q->where('nama_kategori', $request->kategori);
             });
         }
 
-        // Filter berdasarkan nama produk
         if ($request->has('search') && $request->search != '') {
             $query->where('nama_produk', 'like', '%' . $request->search . '%');
         }
