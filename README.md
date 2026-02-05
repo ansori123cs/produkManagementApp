@@ -116,44 +116,44 @@ http://localhost:8000
 
 8. CSRF protection
 
-### Screenshoot Demo
+### Screenshoots Demo
 
 #### Dashboard desktop
 
-![Dashboard](screenshoot-demo/dashboard-desktop.png)
+![Dashboard](screenshoots-demo/dashboard-desktop.png)
 
 #### Dashboard phone
 
-![Dashboard](screenshoot-demo/dashboard-phone.png)
+![Dashboard](screenshoots-demo/dashboard-phone.png)
 
 #### Produk desktop
 
-![Produk](screenshoot-demo/produk-desktop.png)
+![Produk](screenshoots-demo/produk-desktop.png)
 
 #### Produk phone
 
-[Produk](screenshoot-demo/produk-phone.png)
+[Produk](screenshoots-demo/produk-phone.png)
 
 #### Add New Produk desktop
 
-![Produk](screenshoot-demo/new-produk-desktop.png)
+![Produk](screenshoots-demo/new-produk-desktop.png)
 
 #### Add New Produk phone
 
-![Produk](screenshoot-demo/new-produk-phone.png)
+![Produk](screenshoots-demo/new-produk-phone.png)
 
 #### Update Produk desktop
 
-![Produk](screenshoot-demo/update-produk-desktop.png)
+![Produk](screenshoots-demo/update-produk-desktop.png)
 
 #### Update Produk phone
 
-![Produk](screenshoot-demo/update-produk-phone.png)
+![Produk](screenshoots-demo/update-produk-phone.png)
 
 #### Alert Delete Desktop
 
-![Produk](screenshoot-demo/delete-alert-produk-desktop.png)
+![Produk](screenshoots-demo/delete-alert-produk-desktop.png)
 
 #### Alert Delete phone
 
-![Produk](screenshoot-demo/delete-alert-produk-phone.png)
+![Produk](screenshoots-demo/delete-alert-produk-phone.png)
