@@ -1,59 +1,159 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Product Management Application – Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A CRUD (Create, Read, Update, Delete) application for product management with status and category filtering features, built using Laravel, Bootstrap, and PostgreSQL.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- CRUD Products (Create, Read, Update, Delete)
+- Smart Filters by product status (sellable / not sellable) and category
+- Statistics Dashboard for products and categories
+- Responsive design for desktop and mobile
+- Real-time filtering without page reload
+- Interactive notifications using SweetAlert2
+- Data tables with sorting and pagination using DataTables
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technology Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Backend: Laravel 10.x
+- Database: PostgreSQL
+- Frontend: Bootstrap 5, DataTables, SweetAlert2
+- Server: PHP 8.1+, Nginx or Apache
 
-## Learning Laravel
+## Installation and Setup
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Prerequisites
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP 8.1 or higher
+- Composer
+- PostgreSQL
 
-## Laravel Sponsors
+### Step 1: Clone Repository
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```bash
+git clone https://github.com/username/product-management-app.git
+cd product-management-app
+```
 
-### Premium Partners
+### Step 2: Install Dependencies
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+```bash
+composer install
+```
 
-## Contributing
+### Step 3: Environment Configuration
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Copy .env.example to .env:
 
-## Code of Conduct
+```bash
+cp .env.example .env
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Edit .env and configure your database:
 
-## Security Vulnerabilities
+```bash
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=database_name
+DB_USERNAME=username
+DB_PASSWORD=password
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Step 4: Generate Application Key
 
-## License
+```bash
+php artisan key:generate
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Step 5: Database Setup
+
+1. Create the PostgreSQL database:
+
+```bash
+CREATE DATABASE database_name;
+```
+
+2. Run migrations and seeders:
+
+```bash
+php artisan migrate --seed
+
+```
+
+### Step 6: Run Development Server
+
+```bash
+php artisan serve
+```
+
+Access app at:
+
+```bash
+http://localhost:8000
+```
+
+## Application Pages
+
+### Dashboard
+
+1. Total products, Sellable products, Non-sellable products, Total categories
+
+### Produk:
+
+1. Filter by status, Filter by category, Product search, Pagination, Column sorting
+
+2. Basic CRUD
+
+3. CORS Middleware
+
+4. Input Validation
+
+5. Server-side validation
+
+6. Client-side HTML5 validation
+
+7. SQL Injection protection
+
+8. CSRF protection
+
+### Screenshoot Demo
+
+#### Dashboard desktop
+
+![Dashboard](screenshoot-demo/dashboard-desktop.png)
+
+#### Dashboard phone
+
+![Dashboard](screenshoot-demo/dashboard-phone.png)
+
+#### Produk desktop
+
+![Produk](screenshoot-demo/produk-desktop.png)
+
+#### Produk phone
+
+[Produk](screenshoot-demo/produk-phone.png)
+
+#### Add New Produk desktop
+
+![Produk](screenshoot-demo/new-produk-desktop.png)
+
+#### Add New Produk phone
+
+![Produk](screenshoot-demo/new-produk-phone.png)
+
+#### Update Produk desktop
+
+![Produk](screenshoot-demo/update-produk-desktop.png)
+
+#### Update Produk phone
+
+![Produk](screenshoot-demo/update-produk-phone.png)
+
+#### Alert Delete Desktop
+
+![Produk](screenshoot-demo/delete-alert-produk-desktop.png)
+
+#### Alert Delete phone
+
+![Produk](screenshoot-demo/delete-alert-produk-phone.png)
