@@ -116,44 +116,34 @@ http://localhost:8000
 
 8. CSRF protection
 
-### Screenshoots Demo
+## Screenshots Demo
 
-#### Dashboard desktop
+### Dashboard
 
-![Dashboard](screenshoots-demo/dashboard-desktop.png)
+| Desktop                                                       | Mobile                                                     |
+| ------------------------------------------------------------- | ---------------------------------------------------------- |
+| ![Dashboard Desktop](screenshoots-demo/dashboard-desktop.png) | ![Dashboard Mobile](screenshoots-demo/dashboard-phone.png) |
 
-#### Dashboard phone
+### Product List
 
-![Dashboard](screenshoots-demo/dashboard-phone.png)
+| Desktop                                                  | Mobile                                                |
+| -------------------------------------------------------- | ----------------------------------------------------- |
+| ![Product Desktop](screenshoots-demo/produk-desktop.png) | ![Product Mobile](screenshoots-demo/produk-phone.png) |
 
-#### Produk desktop
+### Add New Product
 
-![Produk](screenshoots-demo/produk-desktop.png)
+| Desktop                                                          | Mobile                                                        |
+| ---------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Add Product Desktop](screenshoots-demo/new-produk-desktop.png) | ![Add Product Mobile](screenshoots-demo/new-produk-phone.png) |
 
-#### Produk phone
+### Update Product
 
-[Produk](screenshoots-demo/produk-phone.png)
+| Desktop                                                                | Mobile                                                              |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Update Product Desktop](screenshoots-demo/update-produk-desktop.png) | ![Update Product Mobile](screenshoots-demo/update-produk-phone.png) |
 
-#### Add New Produk desktop
+### Delete Confirmation
 
-![Produk](screenshoots-demo/new-produk-desktop.png)
-
-#### Add New Produk phone
-
-![Produk](screenshoots-demo/new-produk-phone.png)
-
-#### Update Produk desktop
-
-![Produk](screenshoots-demo/update-produk-desktop.png)
-
-#### Update Produk phone
-
-![Produk](screenshoots-demo/update-produk-phone.png)
-
-#### Alert Delete Desktop
-
-![Produk](screenshoots-demo/delete-alert-produk-desktop.png)
-
-#### Alert Delete phone
-
-![Produk](screenshoots-demo/delete-alert-produk-phone.png)
+| Desktop                                                             | Mobile                                                           |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![Delete Alert Desktop](screenshoots-demo/delete-alert-desktop.png) | ![Delete Alert Mobile](screenshoots-demo/delete-alert-phone.png) |
